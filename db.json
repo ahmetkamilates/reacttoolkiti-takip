@@ -1,0 +1,13 @@
+{
+    "jobs":[
+        {
+            "id":1,
+            "position":"Frontend",
+            "company" :"Amazon",
+            "Location":"Turkey",
+            "status":"Mülakat",
+            "type":"Tam Zamanlı",
+            "date":"14/10/2023"
+        }
+    ]
+}

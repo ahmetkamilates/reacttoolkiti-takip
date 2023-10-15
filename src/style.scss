@@ -1,0 +1,162 @@
+
+
+
+body{
+    background: #242424;
+    color: #fff;
+    font-weight: 400;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    h1{
+        align-items: center;
+        display: flex;
+        gap: 10px;
+    }
+    div{
+        display: flex;
+        gap: 20px;
+        a{
+            text-decoration: none;
+            font-size: 19px;
+            color: rgb(226,68,160);
+        }
+        .active{
+            text-shadow: 0 0 20px pink;
+        }
+    }
+}
+
+.list-page{
+    padding: 20px;
+}
+.job-count{
+    
+}
+.job-list{
+ margin-top: 50px;
+ display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+ gap: 50px;
+}
+.error-msg{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+}
+.card{
+background: gray;
+border-radius: 10px;
+padding: 20px;
+.head{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+gap: 40px;
+margin-bottom: 20px;
+.letter{
+    background: purple;
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    font-size: 30px;
+}
+.info{
+    font-size: 20px;
+
+}
+}
+.body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    .field{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        
+    }
+    svg{
+        font-size: 20px;
+    }
+    i{
+            font-size: 23px;
+        }
+        .status{
+            display: flex;
+         span{
+           padding: 10px 20px; 
+           
+           border-radius: 10px;
+        }
+        .interview{
+            background: green;
+        }
+        .rejected{
+            background: red;
+        }
+        .pending{
+            background: orange;
+        }
+        .default{
+            background: gray;
+        }
+        }
+}
+}
+.add-page{
+    min-height: 90vh;
+    display: grid;
+    place-items: center;
+}
+.add-sec{
+    width: 70vw;
+    max-width: 700px;
+    box-shadow:  0 0 px 55px 0 rgb(226,68,160);
+    padding: 25px;
+    form{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        gap: 20px;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+    div input,
+    div select{
+        padding: 10px 50px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+    div:last-child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button{
+            background: rgb(226,68,160);
+            color: white;
+            border-radius: 10px;
+            padding: 5px;
+        }
+    }
+}
+.filter-sec{
+    @extend .add-sec;
+    margin: 20px auto 80px;
+    div:last-child{
+        justify-content: start !important;
+        align-items: unset;
+    }
+}
